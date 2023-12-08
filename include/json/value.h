@@ -3,11 +3,12 @@
 // recognized in your jurisdiction.
 // See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
 
+#if defined(__cplusplus)
 #ifndef JSON_H_INCLUDED
 #define JSON_H_INCLUDED
 
 #if !defined(JSON_IS_AMALGAMATION)
-#include "forwards.h"
+#include <json/forwards.h>
 #endif // if !defined(JSON_IS_AMALGAMATION)
 
 // Conditional NORETURN attribute on the throw functions would:
@@ -958,3 +959,4 @@ inline Value& Value::back() { return *(--end()); }
 #endif // if defined(JSONCPP_DISABLE_DLL_INTERFACE_WARNING)
 
 #endif // JSON_H_INCLUDED
+#endif

@@ -3,6 +3,7 @@
 // recognized in your jurisdiction.
 // See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
 
+#if defined(__cplusplus)
 #ifndef JSON_CONFIG_H_INCLUDED
 #define JSON_CONFIG_H_INCLUDED
 #include <cstddef>
@@ -99,8 +100,8 @@ extern JSON_API int msvc_pre1900_c99_snprintf(char* outBuf, size_t size,
 
 #if !defined(JSON_IS_AMALGAMATION)
 
-#include "allocator.h"
-#include "version.h"
+#include <json/allocator.h>
+#include <json/version.h>
 
 #endif // if !defined(JSON_IS_AMALGAMATION)
 
@@ -148,3 +149,4 @@ using JSONCPP_ISTREAM = Json::IStream;
 using JSONCPP_OSTREAM = Json::OStream;
 
 #endif // JSON_CONFIG_H_INCLUDED
+#endif

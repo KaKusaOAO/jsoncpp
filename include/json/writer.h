@@ -3,11 +3,12 @@
 // recognized in your jurisdiction.
 // See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
 
+#if defined(__cplusplus)
 #ifndef JSON_WRITER_H_INCLUDED
 #define JSON_WRITER_H_INCLUDED
 
 #if !defined(JSON_IS_AMALGAMATION)
-#include "value.h"
+#include <json/value.h>
 #endif // if !defined(JSON_IS_AMALGAMATION)
 #include <ostream>
 #include <string>
@@ -368,3 +369,4 @@ JSON_API OStream& operator<<(OStream&, const Value& root);
 #endif // if defined(JSONCPP_DISABLE_DLL_INTERFACE_WARNING)
 
 #endif // JSON_WRITER_H_INCLUDED
+#endif

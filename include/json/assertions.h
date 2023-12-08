@@ -3,6 +3,7 @@
 // recognized in your jurisdiction.
 // See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
 
+#if defined(__cplusplus)
 #ifndef JSON_ASSERTIONS_H_INCLUDED
 #define JSON_ASSERTIONS_H_INCLUDED
 
@@ -10,7 +11,7 @@
 #include <sstream>
 
 #if !defined(JSON_IS_AMALGAMATION)
-#include "config.h"
+#include <json/config.h>
 #endif // if !defined(JSON_IS_AMALGAMATION)
 
 /** It should not be possible for a maliciously designed file to
@@ -59,3 +60,4 @@
   } while (0)
 
 #endif // JSON_ASSERTIONS_H_INCLUDED
+#endif

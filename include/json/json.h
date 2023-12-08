@@ -6,10 +6,14 @@
 #ifndef JSON_JSON_H_INCLUDED
 #define JSON_JSON_H_INCLUDED
 
-#include "config.h"
-#include "json_features.h"
-#include "reader.h"
-#include "value.h"
-#include "writer.h"
+#include <json/config.h>
+#include <json/json_features.h>
+#include <json/reader.h>
+#include <json/value.h>
+#include <json/writer.h>
+#include <json/allocator.h>
+#include <json/assertions.h>
+#include <json/forwards.h>
+#include <json/version.h>
 
 #endif // JSON_JSON_H_INCLUDED

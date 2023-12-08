@@ -3,12 +3,13 @@
 // recognized in your jurisdiction.
 // See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
 
+#if defined(__cplusplus)
 #ifndef JSON_READER_H_INCLUDED
 #define JSON_READER_H_INCLUDED
 
 #if !defined(JSON_IS_AMALGAMATION)
-#include "json_features.h"
-#include "value.h"
+#include <json/json_features.h>
+#include <json/value.h>
 #endif // if !defined(JSON_IS_AMALGAMATION)
 #include <deque>
 #include <iosfwd>
@@ -404,3 +405,4 @@ JSON_API IStream& operator>>(IStream&, Value&);
 #endif // if defined(JSONCPP_DISABLE_DLL_INTERFACE_WARNING)
 
 #endif // JSON_READER_H_INCLUDED
+#endif

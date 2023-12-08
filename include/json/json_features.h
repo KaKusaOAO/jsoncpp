@@ -3,11 +3,12 @@
 // recognized in your jurisdiction.
 // See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
 
+#if defined(__cplusplus)
 #ifndef JSON_FEATURES_H_INCLUDED
 #define JSON_FEATURES_H_INCLUDED
 
 #if !defined(JSON_IS_AMALGAMATION)
-#include "forwards.h"
+#include <json/forwards.h>
 #endif // if !defined(JSON_IS_AMALGAMATION)
 
 #pragma pack(push)
@@ -60,3 +61,4 @@ public:
 #pragma pack(pop)
 
 #endif // JSON_FEATURES_H_INCLUDED
+#endif

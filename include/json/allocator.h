@@ -3,6 +3,7 @@
 // recognized in your jurisdiction.
 // See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
 
+#if defined(__cplusplus)
 #ifndef JSON_ALLOCATOR_H_INCLUDED
 #define JSON_ALLOCATOR_H_INCLUDED
 
@@ -87,3 +88,4 @@ bool operator!=(const SecureAllocator<T>&, const SecureAllocator<U>&) {
 #pragma pack(pop)
 
 #endif // JSON_ALLOCATOR_H_INCLUDED
+#endif

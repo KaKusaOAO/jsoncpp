@@ -3,11 +3,12 @@
 // recognized in your jurisdiction.
 // See file LICENSE for detail or copy at http://jsoncpp.sourceforge.net/LICENSE
 
+#if defined(__cplusplus)
 #ifndef JSON_FORWARDS_H_INCLUDED
 #define JSON_FORWARDS_H_INCLUDED
 
 #if !defined(JSON_IS_AMALGAMATION)
-#include "config.h"
+#include <json/config.h>
 #endif // if !defined(JSON_IS_AMALGAMATION)
 
 namespace Json {
@@ -41,3 +42,4 @@ class ValueConstIterator;
 } // namespace Json
 
 #endif // JSON_FORWARDS_H_INCLUDED
+#endif
